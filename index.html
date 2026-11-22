@@ -131,6 +131,27 @@
         color: #ceff00;
         font-size: 22px;
       }
+      /* Preloader Responsive Styling */
+      .preloader .preloader-heading .load-text {
+        font-size: clamp(16px, 2.6vw, 28px);
+        font-weight: 700;
+        letter-spacing: clamp(4px, 0.9vw, 9px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px clamp(14px, 2.5vw, 26px);
+        max-width: 95vw;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .load-word {
+        display: inline-flex;
+        white-space: nowrap;
+      }
+      .load-word span {
+        display: inline-block;
+      }
     </style>
   </head>
 
@@ -145,13 +166,33 @@
       </svg>
       <div class="preloader-heading">
         <div class="load-text">
-          <span>A</span>
-          <span>J</span>
-          <span>A</span>
-          <span>Y</span>
-          <span>.</span>
-          <span>A</span>
-          <span>I</span>
+          <div class="load-word">
+            <span style="animation-delay: 0.00s;">A</span>
+            <span style="animation-delay: 0.06s;">J</span>
+            <span style="animation-delay: 0.12s;">A</span>
+            <span style="animation-delay: 0.18s;">Y</span>
+          </div>
+          <div class="load-word">
+            <span style="animation-delay: 0.24s;">S</span>
+            <span style="animation-delay: 0.30s;">A</span>
+            <span style="animation-delay: 0.36s;">B</span>
+            <span style="animation-delay: 0.42s;">A</span>
+            <span style="animation-delay: 0.48s;">R</span>
+            <span style="animation-delay: 0.54s;">I</span>
+            <span style="animation-delay: 0.60s;">S</span>
+            <span style="animation-delay: 0.66s;">H</span>
+          </div>
+          <div class="load-word">
+            <span style="animation-delay: 0.72s;">P</span>
+            <span style="animation-delay: 0.78s;">O</span>
+            <span style="animation-delay: 0.84s;">R</span>
+            <span style="animation-delay: 0.90s;">T</span>
+            <span style="animation-delay: 0.96s;">F</span>
+            <span style="animation-delay: 1.02s;">O</span>
+            <span style="animation-delay: 1.08s;">L</span>
+            <span style="animation-delay: 1.14s;">I</span>
+            <span style="animation-delay: 1.20s;">O</span>
+          </div>
         </div>
       </div>
     </div>

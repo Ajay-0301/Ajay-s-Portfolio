@@ -36,7 +36,7 @@
     const flat = "M0 2S175 1 500 1s500 1 500 1V0H0Z";
     // Text animation
     tl.to(".preloader-heading .load-text, .preloader-heading .cont", {
-      delay: 1,
+      delay: 1.4,
       y: -80,
       opacity: 0,
       duration: 0.6,
