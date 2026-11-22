@@ -555,21 +555,8 @@
   });
 
   ///////////////////////
-  // 09. Hover Reveal
-  const hoverItem = document.querySelectorAll(".hover__reveal-item");
-  function moveImage(e, hoverItem, index) {
-    const item = hoverItem.getBoundingClientRect();
-    const x = e.clientX - item.x;
-    const y = e.clientY - item.y;
-    if (hoverItem.children[index]) {
-      hoverItem.children[index].style.transform = `translate(${x}px, ${y}px)`;
-    }
-  }
-  hoverItem.forEach((item, i) => {
-    item.addEventListener("mousemove", (e) => {
-      setInterval(moveImage(e, item, 1), 50);
-    });
-  });
+  // 09. Hover Reveal (Disabled per user request)
+  // const hoverItem = document.querySelectorAll(".hover__reveal-item");
 
   ///////////////////////
   // 10. Tesimonial Two child (2) Effect
