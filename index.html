@@ -152,9 +152,14 @@
       .load-word span {
         display: inline-block;
       }
-      /* Fluid & Single-Line Banner Title */
+      /* Banner Layout: Ajay's photo ALWAYS in front of background text */
+      .banner-three-man {
+        z-index: 2 !important;
+        pointer-events: none;
+      }
+      /* Fluid & Single-Line Banner Title BEHIND photo and lifted */
       .banner-three-title {
-        font-size: clamp(38px, 10.5vw, 175px) !important;
+        font-size: clamp(38px, 10vw, 165px) !important;
         line-height: 0.9 !important;
         white-space: nowrap !important;
         text-align: center !important;
@@ -165,7 +170,8 @@
         margin-left: auto !important;
         margin-right: auto !important;
         position: relative !important;
-        transform: translateY(clamp(-85px, -5vw, -45px)) !important;
+        z-index: 1 !important;
+        transform: translateY(clamp(-130px, -7vw, -65px)) !important;
       }
     </style>
   </head>
